@@ -1,0 +1,84 @@
+/* Custom Styles for Refyul */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+:root {
+    --brand-green: #0f5132;
+    --brand-green-dark: #0a3d26;
+    --brand-green-light: #15803d;
+    --brand-lime: #a3e635;
+    --brand-bg: #f5f5dc;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--brand-bg);
+    color: #1f2937;
+}
+
+/* Smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Custom animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fade-in {
+    animation: fadeIn 0.6s ease-out;
+}
+
+/* Phone mockup shadows */
+.phone-shadow {
+    filter: drop-shadow(0 20px 40px rgba(0, 0, 0, 0.25));
+    transition: transform 0.3s ease;
+}
+
+.phone-shadow:hover {
+    transform: scale(1.02) translateY(-3px);
+}
+
+/* Progress bar animation */
+.progress-bar {
+    width: 84.7%;
+    transition: width 1.5s ease-out 0.5s;
+}
+
+/* Button hover effects */
+.btn-primary {
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(15, 81, 50, 0.2);
+}
+
+.btn-primary:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 8px 20px rgba(15, 81, 50, 0.3);
+}
+
+/* Header styling */
+header {
+    background: rgba(255, 255, 255, 0.9);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .hero-content {
+        text-align: center;
+    }
+}

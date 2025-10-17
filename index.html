@@ -399,6 +399,86 @@
             </div>
         </section>
 
+        <!-- Join the Waitlist Section -->
+        <section class="py-20 bg-gradient-to-b from-[#f5fbe8] to-[#f5f5dc]">
+            <div class="container mx-auto max-w-xl px-4">
+                <div class="text-center mb-10">
+                    <h2 class="text-3xl md:text-4xl font-black text-gray-900 mb-2">Join the Waitlist</h2>
+                    <p class="text-base md:text-lg text-gray-600">Sign up now and be part of the fuel delivery revolution in Lagos</p>
+                </div>
+                <form id="waitlistForm" class="bg-white rounded-2xl shadow-md p-8 md:p-10 mb-6">
+                    <div class="mb-4">
+                        <label class="block text-gray-700 font-semibold mb-1">Full Name</label>
+                        <input type="text" name="fullName" class="w-full rounded-md border border-gray-300 px-4 py-2 focus:outline-none focus:ring-2 focus:ring-brand-green" placeholder="Enter your fullname" required>
+                    </div>
+                    <div class="mb-4">
+                        <label class="block text-gray-700 font-semibold mb-1">Email Address</label>
+                        <input type="email" name="email" class="w-full rounded-md border border-gray-300 px-4 py-2 focus:outline-none focus:ring-2 focus:ring-brand-green" placeholder="Enter your email address" required>
+                    </div>
+                    <div class="mb-4">
+                        <label class="block text-gray-700 font-semibold mb-1">Phone Number</label>
+                        <input type="tel" name="phone" class="w-full rounded-md border border-gray-300 px-4 py-2 focus:outline-none focus:ring-2 focus:ring-brand-green" placeholder="Enter your phone number" required>
+                    </div>
+                    <div class="mb-4">
+                        <label for="location" class="block text-gray-700 font-semibold mb-1">Location in Lagos</label>
+                        <select id="location" name="location" class="w-full rounded-md border border-gray-300 px-4 py-2 focus:outline-none focus:ring-2 focus:ring-brand-green" required>
+                            <option value="">Select your area</option>
+                            <option value="Ikeja">Ikeja</option>
+                            <option value="Lekki">Lekki</option>
+                            <option value="Yaba">Yaba</option>
+                            <option value="Surulere">Surulere</option>
+                            <option value="Victoria Island">Victoria Island</option>
+                            <option value="Ikoyi">Ikoyi</option>
+                            <option value="Ajah">Ajah</option>
+                            <option value="Maryland">Maryland</option>
+                            <option value="Apapa">Apapa</option>
+                            <option value="Other">Other</option>
+                        </select>
+                    </div>
+                    <div class="mb-4">
+                        <label class="block text-gray-700 font-semibold mb-1">Primary Need (select all that apply)</label>
+                        <div class="flex flex-col gap-2">
+                            <label class="inline-flex items-center">
+                                <input type="checkbox" name="needs" value="Petrol for Vehicle" class="form-checkbox text-brand-green mr-2"> Petrol for Vehicle
+                            </label>
+                            <label class="inline-flex items-center">
+                                <input type="checkbox" name="needs" value="Generator Fuel" class="form-checkbox text-brand-green mr-2"> Generator Fuel
+                            </label>
+                            <label class="inline-flex items-center">
+                                <input type="checkbox" name="needs" value="Cooking Gas" class="form-checkbox text-brand-green mr-2"> Cooking Gas
+                            </label>
+                        </div>
+                    </div>
+                    <div class="mb-6">
+                        <label for="vehicleType" class="block text-gray-700 font-semibold mb-1">Vehicle Type (if applicable)</label>
+                        <select id="vehicleType" name="vehicleType" class="w-full rounded-md border border-gray-300 px-4 py-2 focus:outline-none focus:ring-2 focus:ring-brand-green">
+                            <option value="">Select vehicle type</option>
+                            <option value="Car">Car</option>
+                            <option value="SUV">SUV</option>
+                            <option value="Truck">Truck</option>
+                            <option value="Motorcycle">Motorcycle</option>
+                            <option value="Other">Other</option>
+                        </select>
+                    </div>
+                    <button type="submit" id="submitBtn" class="w-full bg-brand-green hover:bg-brand-green-dark text-white font-semibold py-3 rounded-md transition-all text-center btn-primary">
+                        <span id="btnText">Join the Waitlist &rarr;</span>
+                        <span id="btnLoader" class="hidden">Submitting...</span>
+                    </button>
+                    <p class="text-xs text-gray-500 mt-3 text-center">By joining, you'll get priority access and exclusive launch discounts</p>
+                    
+                    <!-- Success/Error Messages -->
+                    <div id="formMessage" class="mt-4 p-3 rounded-lg hidden"></div>
+                </form>
+                <div class="text-center mt-6">
+                    <p class="text-sm text-gray-600 mb-3">Refer friends and move up the waitlist!</p>
+                    <div class="flex flex-col md:flex-row gap-3 justify-center">
+                        <button class="bg-gray-100 hover:bg-gray-200 text-gray-700 font-semibold px-5 py-2 rounded-md border border-gray-200 transition">Refer 3 friends = Move up 10 spots</button>
+                        <button class="bg-gray-100 hover:bg-gray-200 text-gray-700 font-semibold px-5 py-2 rounded-md border border-gray-200 transition">Refer 5 friends = Extra 10% off</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
     </main>
 
     <script src="./js/main.js"></script>
